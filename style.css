@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #020617;
+    color: #FFF8F0;
+    margin-bottom: 5vh;
+}
+
+header{
+    background: #0f172a;
+    padding-left: 1vw;
+    padding-top: 2vh;
+    position:static;
+    height: 10vh;
+    width: 100%;
+    display:inline-flexbox;
+    align-items: center;
+    overflow: hidden;
+}
+
+#home{
+    float: right;
+    align-items: center;
+    margin-top: -45px;
+    margin-right: 1vw;
+    display: inline-flexbox;
+    height: 5vh;
+}
+
+hr{
+    color: #38bdf8;
+}
+
+.container{
+    margin-top: 7vh;
+    width: 55%;
+    background-color: #111827;
+    opacity: 80%;
+    border-radius: 10px;
+    font-size: 1.5em;
+    padding-bottom: 3vh;
+    padding-top: 3vh;
+}
+
+#boas_vindas{
+    padding: 3vh;
+    color: #be0000;
+    font-weight: 600;
+    text-shadow: 0 0 10px rgba(247, 0, 0, 0.5);
+    width: 50%;
+    border-radius: 10vh;
+    margin-top: 5vh;
+    text-align: center;
+}
