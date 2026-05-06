@@ -21,13 +21,17 @@ header{
     overflow: hidden;
 }
 
-#home{
+.menu{
     float: right;
     align-items: center;
     margin-top: -45px;
     margin-right: 1vw;
     display: inline-flexbox;
+}
+
+.icones{
     height: 5vh;
+    padding-right: 2vh;
 }
 
 hr{

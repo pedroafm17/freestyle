@@ -1,7 +1,4 @@
 const atual = new Date();
-
-document.getElementById("good").textContent = `Hoje: ${atual.getDate()}/ ${atual.getMonth()+1}/ ${atual.getFullYear()}`;
-
 let am;
 
 function atualizarRelogio() {
@@ -13,10 +10,16 @@ function atualizarRelogio() {
         am = "AM";
     }else{
         am = " "
+    
     }
-    document.getElementById("good").textContent = `Hora certa ${horas}:${minutos}:${segundos} ${am}`;
+    if(atual.getHours()< 12 && atual.getHours() >= 5){
+        document.getElementById("good").textContent = `Bom dia - ${horas}:${minutos}:${segundos} ${am}`;
+    }else if(atual.getHours() >= 12 && atual.getHours() <= 18){
+        document.getElementById("good").textContent = `Boa tarde - ${horas}:${minutos}:${segundos} ${am}`;
+    }else{
+        document.getElementById("good").textContent = `Boa noite - ${horas}:${minutos}:${segundos} ${am}`;
+    }  
   }
-  
   setInterval(atualizarRelogio,1000);
   atualizarRelogio();
 
