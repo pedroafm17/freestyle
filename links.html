@@ -20,7 +20,23 @@
         </a>
         </ul>
     </header>
-    
-    <script src="script.js"></script>
+    <div class="container" id="addlinks">
+        <h2>Adicionar links</h2>
+        <hr>
+        <label for="nomelink">Site:</label>
+        <input type="text" id="nomelink" class="inputs">
+        <br>
+        <br>
+        <label for="video">Video:</label>
+        <input type="text" id="video" class="inputs">
+        <br>
+        <br>
+        <label for="urlink">Link:</label>
+        <input type="text" id="urlink" class="inputs"> 
+        <br>
+        <br>    
+        <button class="btn btn-primary" type="submit" onclick="adicionar_link()">Adicionar à lista</button>
+    </div>
+    <script src="links.js"></script>
 </body>
 </html>
