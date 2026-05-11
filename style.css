@@ -62,12 +62,12 @@ hr{
 
 #addlinks{
     text-align: center;
-
 }
 
 .inputs{
     width: 20vw;
     background:#8d909b;
+    margin-right: 2vw;
 }
 
 .inputs:hover{

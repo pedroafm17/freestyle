@@ -1,44 +1,51 @@
-const localtitulo = document.getElementById("titulolink");
-const titulo = document.createElement("h1");
-titulo.textContent = "Youtube";
-localtitulo.appendChild(titulo);
+var links = [];
 
 function adicionar_link(){
-    // Captura o que é digitado 
-    let site = document.getElementById("nomelink").value;
+
+    if(localStorage.minhaurl){
+        links = JSON.parse(localStorage.getItem('minhaurl')); //recupera chave antes digitada.
+    }
+
+    let nome = document.getElementById("video").value;
     let url = document.getElementById("urlink").value;
-    let video = document.getElementById("video").value;
 
-    //define titulo como let site e o conteúdo (paragrafo) da url como let url
-    const titulosite = document.createElement("h1");
-    const paragrafourl = document.createElement("a");
-    const videonome = document.createElement("h2")
-
-    //altera o conteúdo
-    titulosite.textContent = site;
-    paragrafourl.href = url;
-    paragrafourl.textContent = `Ir para ${video}`
-    videonome.textContent = video;
-
-    //Cria a DIV
-    const divlink = document.createElement("div");
-    divlink.className = "container";
-
-    //adiciona cada um à div
-    divlink.appendChild(titulosite);
-    divlink.appendChild(document.createElement("hr"));
-    divlink.appendChild(videonome);
-    divlink.appendChild(paragrafourl);
-
-    //coloca no corpo do texto.
-
-    if(site == "" || url == "" || video == ""){
-        window.alert("Tá vazio pai, como tu vai guardar?");
-        return;
+    if(document.getElementById("video").value == "" || document.getElementById("urlink").value == ""){
+        window.alert("Preenche com os dois pourra plmds")
     }else{
-        document.body.appendChild(divlink);
-        document.getElementById("nomelink").value= ""; //pega o Input e zera
-        document.getElementById("urlink").value= "";
-        document.getElementById("video").value= "";
+    
+    let url = document.getElementById("urlink").value;
+    
+    if(url.trim() !== ""){
+    links.push({ //criando objetoos
+        nome: nome,
+        url: url
+    });
+    }
+    localStorage.minhaurl = JSON.stringify(links);
+    console.log(links);
+    document.getElementById("video").value = "";
+    document.getElementById("urlink").value = "";   
+    mostrarlinks()
     }
 }
+
+function mostrarlinks(){
+    let local_links = document.getElementById("meuslinks");
+    
+    local_links.innerHTML = "";
+
+    for(var i in links){
+        let video = document.createElement("a"); //to criando um /a
+
+        video.href = links[i].url; // .url pois agora criei objetos.
+        video.innerText = links[i].nome;
+        local_links.append(video);
+        local_links.append(document.createElement("br"));
+    }
+}
+
+if(localStorage.minhaurl){
+    links = JSON.parse(localStorage.getItem("minhaurl"));
+}
+
+mostrarlinks(); //pra exibir sempre
