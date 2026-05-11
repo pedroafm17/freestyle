@@ -36,6 +36,7 @@ function mostrarlinks(){
 
     for(var i in links){
         let video = document.createElement("a"); //to criando um /a
+        video.className = "barraalinks";
 
         video.href = links[i].url; // .url pois agora criei objetos.
         video.innerText = links[i].nome;
@@ -47,5 +48,4 @@ function mostrarlinks(){
 if(localStorage.minhaurl){
     links = JSON.parse(localStorage.getItem("minhaurl"));
 }
-
 mostrarlinks(); //pra exibir sempre

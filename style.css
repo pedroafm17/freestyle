@@ -70,6 +70,17 @@ hr{
     margin-right: 2vw;
 }
 
+.barraalinks{
+    color: #0c79f5;
+    text-shadow: 0 0 10px #006de9;
+    text-decoration: dotted;
+}
+
+.barraalinks:hover{
+    color: #3a0502;
+    text-shadow: 0 0 10px rgba(218, 0, 0, 0.5);
+}
+
 .inputs:hover{
     border: 2px solid #356e86;
 }
