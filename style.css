@@ -87,3 +87,15 @@ hr{
 .inputs:hover{
     border: 1px solid #006de9;
 }
+
+#apagarlinks{
+    margin-top: 7vh;
+    width: 25%;
+    background-color: #111827;
+    opacity: 80%;
+    border-radius: 10px;
+    font-size: 1.5em;
+    padding-bottom: 3vh;
+    padding-top: 3vh;
+    align-items: center;
+}

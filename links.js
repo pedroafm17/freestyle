@@ -10,7 +10,7 @@ function adicionar_link(){
     let url = document.getElementById("urlink").value;
 
     if(document.getElementById("video").value == "" || document.getElementById("urlink").value == ""){
-        window.alert("Preenche com os dois pourra plmds")
+        window.alert("Preenche com os dois ai")
     }else{
     
     let url = document.getElementById("urlink").value;
@@ -49,3 +49,30 @@ if(localStorage.minhaurl){
     links = JSON.parse(localStorage.getItem("minhaurl"));
 }
 mostrarlinks(); //pra exibir sempre
+
+function apagarstorage(){
+    if(!document.getElementById("apagarlinks")){
+        const divapagar = document.createElement("div");
+        const botaoaceitar = document.createElement("button");
+        const botaorecusar = document.createElement("button")
+        divapagar.id = "apagarlinks";
+        divapagar.className = "container";
+        divapagar.innerHTML = "<h2>Deseja realmente apagar a lista?</h2>";
+        botaoaceitar.className = "btn btn-primary";
+        botaorecusar.className = "btn btn-primary";
+        botaorecusar.addEventListener("click", () =>{
+            location.reload("links");
+        })
+        botaoaceitar.addEventListener("click", ()=>{
+            localStorage.clear(),
+            location.reload();
+        });
+        botaorecusar.innerText = "Não, manter links";
+        botaoaceitar.innerText = "Sim, apagar";
+        divapagar.appendChild(botaoaceitar);
+        divapagar.appendChild(document.createElement("br"));
+        divapagar.appendChild(botaorecusar);
+        localapagar.appendChild(divapagar);       
+    } 
+}
+// localStorage.clear(), location.reload()
