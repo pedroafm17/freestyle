@@ -101,3 +101,17 @@ hr{
     align-items: center;
 }
 
+.dias{
+    font-size: 3.0em;
+    color: #0c79f5;
+    text-shadow: 0 0 10px rgba(26, 141, 187, 0.5);
+}
+
+#contadordedias{
+    text-align: center;
+    width: 45%;
+}
+
+#imgcontador{
+    height: 12vh;
+}
