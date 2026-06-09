@@ -6,11 +6,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="shortcut icon" href="fotos/xbox.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <title>Bem vindo</title>
+    <title>Meus Links</title>
 </head>
 <body>
     <header>
-        <h1 id="titulo_site">𝔊𝔲𝔞𝔯𝔡𝔞 𝔩𝔦𝔫𝔨𝔰 𝔢 𝔲𝔱𝔦𝔩𝔦𝔡𝔞𝔡𝔢𝔰</h1>
+        <h1 id="titulo_site">Monteiro Lobato</h1>
         <ul class="menu">
         <a href="index.html">
         <img src="fotos/home.png" alt="home" class="icones">
@@ -18,20 +18,28 @@
         <a href="links.html">
         <img src="fotos/link.png" alt="link" class="icones">
         </a>
+        <a href="contador.html">
+        <img src="fotos/calendario.png" alt="link" class="icones">
+        </a>
         </ul>
     </header>
     <div class="container" id="addlinks">
         <h2>Adicionar links</h2>
         <hr>
-        <label for="video">Nome:</label>
+        <label for="video">Nome</label>
+        <br>
         <input type="text" id="video" class="inputs">
-        <label for="urlink">Link:</label>
+        <br>
+        <br>
+        <label for="urlink">Link</label>
+        <br>
         <input type="text" id="urlink" class="inputs"> 
         <br>
         <br>    
         <button class="btn btn-primary" type="submit" onclick="adicionar_link()" onclick="adicionar_video()">Adicionar à lista</button>
-        <button class="btn btn-primary" type="submit" onclick="localStorage.clear(), location.reload()">Limpar Storage</button>
+        <button class="btn btn-primary" type="submit" onclick="apagarstorage()">Limpar Lista de links</button>
     </div>
+    <div id="localapagar"></div>
     <div class="container">
         <h1>Meus Links</h1>
         <hr>

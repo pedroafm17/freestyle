@@ -10,7 +10,7 @@ body{
 }
 
 header{
-    background: #0f172a;
+    background: rgb(15, 23, 42,0.3);
     padding-left: 1vw;
     padding-top: 2vh;
     position:static;
@@ -30,8 +30,8 @@ header{
 }
 
 .icones{
-    height: 5vh;
-    padding-right: 2vh;
+    height: 3.0vh;
+    padding-right: 3vh;
 }
 
 hr{
@@ -62,12 +62,15 @@ hr{
 
 #addlinks{
     text-align: center;
+    align-items: center;
 }
 
 .inputs{
-    width: 20vw;
-    background:#8d909b;
+    width: 50vw;
+    background:#2c3450;
     margin-right: 2vw;
+    border: 1px solid #4d91df;
+    border-radius: 10px;
 }
 
 .barraalinks{
@@ -77,10 +80,49 @@ hr{
 }
 
 .barraalinks:hover{
-    color: #3a0502;
-    text-shadow: 0 0 10px rgba(218, 0, 0, 0.5);
+    color: #0764ce;
+    text-shadow: 0 0 10px rgba(26, 141, 187, 0.5);
 }
 
 .inputs:hover{
-    border: 2px solid #356e86;
+    border: 1px solid #006de9;
+    transition:1s;
+}
+
+#apagarlinks{
+    margin-top: 7vh;
+    width: 25%;
+    background-color: #111827;
+    opacity: 80%;
+    border-radius: 10px;
+    font-size: 1.5em;
+    padding-bottom: 3vh;
+    padding-top: 3vh;
+    align-items: center;
+}
+
+.dias{
+    font-size: 3.0em;
+    color: #0c79f5;
+    text-shadow: 0 0 10px rgba(26, 141, 187, 0.5);
+}
+
+#contadordedias{
+    text-align: center;
+    width: 45%;
+}
+
+#imgcontador{
+    height: 12vh;
+}
+
+.img-container{
+    height: 3vh;
+    width: 3vh;
+}
+
+@media (max-width: 516px){
+    .dias{
+        font-size: 2.0em;
+    }
 }

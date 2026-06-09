@@ -28,3 +28,7 @@ function atualizarRelogio() {
 function abrirlinks(){
     window.location.href='links.html';
 }
+
+function abrircontador(){
+    window.location.href='contador.html';
+}
