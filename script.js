@@ -42,3 +42,7 @@ function abrirapps(){
 function abrirdiarios(){
     window.location.href='diarios.html';
 }
+
+function abrirdwl(){
+    window.location.href='dwl.html';
+}
