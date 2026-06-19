@@ -32,3 +32,13 @@ function abrirlinks(){
 function abrircontador(){
     window.location.href='contador.html';
 }
+
+function abririsos(){
+    window.location.href='isos.html';
+}
+function abrirapps(){
+    window.location.href='apps.html';
+}
+function abrirdiarios(){
+    window.location.href='diarios.html';
+}
