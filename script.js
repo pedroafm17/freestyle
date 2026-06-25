@@ -12,9 +12,9 @@ function atualizarRelogio() {
         am = " "
     
     }
-    if(atual.getHours()< 12 && atual.getHours() >= 5){
+    if(agora.getHours()< 12 && agora.getHours() >= 5){
         document.getElementById("good").textContent = `Bom dia - ${horas}:${minutos}:${segundos} ${am}`;
-    }else if(atual.getHours() >= 12 && atual.getHours() <= 18){
+    }else if(agora.getHours() >= 12 && agora.getHours() < 18){
         document.getElementById("good").textContent = `Boa tarde - ${horas}:${minutos}:${segundos} ${am}`;
     }else{
         document.getElementById("good").textContent = `Boa noite - ${horas}:${minutos}:${segundos} ${am}`;
