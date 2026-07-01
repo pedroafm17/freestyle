@@ -71,6 +71,7 @@ hr{
     margin-right: 2vw;
     border: 1px solid #4d91df;
     border-radius: 10px;
+    color: white;
 }
 
 .barraalinks{
@@ -124,6 +125,39 @@ hr{
 .img-develop{
     height: 30vw;
     width: 30vw;
+}
+
+#code-block {
+    background: #6b6262;
+    color: #D4D4D4;
+    font-family: 'Cascadia Code', Consolas, monospace;
+    padding: 16px;
+    border-radius: 8px;
+    overflow-x: auto;
+}
+
+#especificos{
+    background: #020617;
+    font-size: 0.9em;
+    text-align: center;
+    padding-top: 0;
+    margin-top: 10px;
+    color: #be0000;
+}
+
+#img-vbox {
+    display: none;
+    height: 3.5vh;
+    width: 3.8vh;
+}
+
+#botao-vbox{
+
+    background: #05448b;
+    border-color: #9e7324;
+}
+a:hover ~ #img-vbox {
+    display: inline;
 }
 
 @media (max-width: 516px){
