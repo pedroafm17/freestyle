@@ -10,7 +10,7 @@ body{
 }
 
 header{
-    background: rgb(15, 23, 42,0.3);
+    background: #0d1f354d;
     padding-left: 1vw;
     padding-top: 2vh;
     position:static;
@@ -35,7 +35,7 @@ header{
 }
 
 hr{
-    color: #38bdf8;
+    color: #31afe6;
 }
 
 .container{
@@ -58,7 +58,7 @@ hr{
     border-radius: 10vh;
     margin-top: 5vh;
     text-align: center;
-    background: linear-gradient(to right, #03102c, #000000);
+    background: linear-gradient(to right, #03102c, #04101a);
 }
 
 #addlinks{
@@ -111,7 +111,7 @@ hr{
 
 #contadordedias{
     text-align: center;
-    width: 45%;
+    width: 50%;
 }
 
 #imgcontador{
@@ -153,9 +153,10 @@ hr{
 }
 
 #botao-vbox{
-
     background: #05448b;
-    border-color: #9e7324;
+    border-color: #05448b;
+
+
 }
 a:hover ~ #img-vbox {
     display: inline;
@@ -170,6 +171,18 @@ a:hover ~ #img-vbox {
     width: 100%;
     margin-top: 3vh;
 }
+
+#btnsec{
+    background-color: #063f79;
+    border-color: #111827;
+}
+
+#btnsec:hover{
+    box-shadow: 0 0 10px#468ee0;
+    transition:ease-in-out 0.1s;
+    background-color: #031930;
+}
+
 
 @media (max-width: 516px){
     .dias{
