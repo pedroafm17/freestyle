@@ -4,7 +4,7 @@
 }
 
 body{
-    background: #020617;
+    background: rgb(2, 6, 23);
     color: #FFF8F0;
     margin-bottom: 5vh;
 }
@@ -58,7 +58,7 @@ hr{
     border-radius: 10vh;
     margin-top: 5vh;
     text-align: center;
-    background: linear-gradient(to right, #03102c, #04101a);
+    background: linear-gradient(to right, #010714, #000000);
 }
 
 #addlinks{
@@ -155,8 +155,6 @@ hr{
 #botao-vbox{
     background: #05448b;
     border-color: #05448b;
-
-
 }
 a:hover ~ #img-vbox {
     display: inline;
@@ -172,18 +170,16 @@ a:hover ~ #img-vbox {
     margin-top: 3vh;
 }
 
-#btnsec{
+.btnsec{
     background-color: #063f79;
     border-color: #111827;
 }
 
-#btnsec:hover{
+.btnsec:hover{
     box-shadow: 0 0 10px#468ee0;
     transition:ease-in-out 0.1s;
     background-color: #031930;
 }
-
-
 
 @media (max-width: 516px){
     .dias{
@@ -198,4 +194,51 @@ a:hover ~ #img-vbox {
         height: 30%;
         width: 80%;
     }
+}
+
+#btnlinux{
+    background-color: #06a529fd;
+    border-color: #02942e;
+}
+
+#btnlinux:hover{
+    box-shadow: 0 0 10px#01ff80;
+    transition:ease-in-out 0.1s;
+    background-color: #015327;
+}
+
+#imglinux{
+    display: none;
+}
+
+/* Tema linux */
+
+body.linux{
+    background-color: rgb(3, 4, 5);
+    color: rgb(0, 177, 38);
+}
+body.linux .container {
+    background: rgb(5, 5, 5);
+}
+
+body.linux hr{
+    color: rgb(48, 54, 61);
+}
+
+body.linux .btnsec{
+    background: transparent;
+    border: solid 1px rgb(0, 255, 102);
+}
+
+body.linux .btnsec:hover{
+    box-shadow: 0 0 10px#01ff80;
+}
+
+body.linux header{
+    background-color: rgb(9, 11, 14);
+}
+
+body.linux #imglinux{
+    display: block;
+    height: 10vh;
 }

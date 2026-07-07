@@ -46,3 +46,11 @@ function abrirdiarios(){
 function abrirdwl(){
     window.location.href='dwl.html';
 }
+
+function trocartema(){
+    if(getComputedStyle(document.body).backgroundColor == "rgb(2, 6, 23)"){
+        document.body.classList.toggle("linux");
+    }else{
+        document.body.classList.remove("linux");
+    }
+}
