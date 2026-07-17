@@ -4,13 +4,13 @@
 }
 
 body{
-    background: #020617;
+    background: rgb(2, 6, 23);
     color: #FFF8F0;
     margin-bottom: 5vh;
 }
 
 header{
-    background: rgb(15, 23, 42,0.3);
+    background: #0d1f354d;
     padding-left: 1vw;
     padding-top: 2vh;
     position:static;
@@ -35,13 +35,13 @@ header{
 }
 
 hr{
-    color: #38bdf8;
+    color: #31afe6;
 }
 
 .container{
     margin-top: 7vh;
     width: 55%;
-    background-color: #111827;
+    background: linear-gradient(to right, #051122, #020617);
     opacity: 80%;
     border-radius: 10px;
     font-size: 1.5em;
@@ -58,6 +58,7 @@ hr{
     border-radius: 10vh;
     margin-top: 5vh;
     text-align: center;
+    background: linear-gradient(to right, #010714, #000000);
 }
 
 #addlinks{
@@ -110,7 +111,7 @@ hr{
 
 #contadordedias{
     text-align: center;
-    width: 45%;
+    width: 50%;
 }
 
 #imgcontador{
@@ -118,8 +119,8 @@ hr{
 }
 
 .img-container{
-    height: 3vh;
-    width: 3vh;
+    height: 4vh;
+    width: 4vh;
 }
 
 .img-develop{
@@ -152,9 +153,8 @@ hr{
 }
 
 #botao-vbox{
-
     background: #05448b;
-    border-color: #9e7324;
+    border-color: #05448b;
 }
 a:hover ~ #img-vbox {
     display: inline;
@@ -163,15 +163,93 @@ a:hover ~ #img-vbox {
 .blocos{
     margin-left: 15px;
     display: block;
-    background-color: #162433;
-    border-radius: 3px;
+    background: linear-gradient(to right, #010c1a, #020617);
+    border-radius: 5px;
     padding: 10px;
-    width: 50%;
-    margin-top: 2vh;
+    width: 100%;
+    margin-top: 3vh;
+}
+
+.btnsec{
+    background-color: #063f79;
+    border-color: #111827;
+}
+
+#bgcolor:active{
+    background: #01264b ;
+    border-color: #111827;
+    transition: ease-in-out 0.1s;
+}
+
+.btnsec:hover{
+    box-shadow: 0 0 10px#468ee0;
+    transition:ease-in-out 0.1s;
+    background-color: #031930;
 }
 
 @media (max-width: 516px){
     .dias{
         font-size: 2.0em;
     }
+
+    .container{
+        width: 80%;
+    }
+
+    #btnos{
+        height: 30%;
+        width: 80%;
+    }
+}
+
+#btnlinux{
+    background-color: #06a529fd;
+    border-color: #02942e;
+}
+
+#btnlinux:hover{
+    box-shadow: 0 0 10px#01ff80;
+    transition:ease-in-out 0.1s;
+    background-color: #015327;
+}
+
+#imglinux{
+    display: none;
+}
+
+/* Tema linux */
+
+body.linux{
+    background-color: rgb(3, 4, 5);
+    color: rgb(0, 177, 38);
+}
+body.linux .container {
+    background: rgb(5, 5, 5);
+}
+
+body.linux hr{
+    color: rgb(48, 54, 61);
+}
+
+body.linux .btnsec{
+    background: transparent;
+    border: solid 1px rgb(0, 255, 102);
+}
+
+body.linux .btnsec:active{
+    background: rgb(16, 75, 39);
+    border: solid 1px rgb(1, 189, 76);
+}
+
+body.linux .btnsec:hover{
+    box-shadow: 0 0 10px#01ff80;
+}
+
+body.linux header{
+    background-color: rgb(9, 11, 14);
+}
+
+body.linux #imglinux{
+    display: block;
+    height: 10vh;
 }

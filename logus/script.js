@@ -33,8 +33,8 @@ function abrircontador(){
     window.location.href='contador.html';
 }
 
-function abririsos(){
-    window.location.href='isos.html';
+function abriros(){
+    window.location.href='os.html';
 }
 function abrirapps(){
     window.location.href='apps.html';
@@ -46,3 +46,12 @@ function abrirdiarios(){
 function abrirdwl(){
     window.location.href='dwl.html';
 }
+
+function trocartema(){
+    if(getComputedStyle(document.body).backgroundColor == "rgb(2, 6, 23)"){
+        document.body.classList.toggle("linux");
+    }else{
+        document.body.classList.remove("linux");
+    }
+}
+
