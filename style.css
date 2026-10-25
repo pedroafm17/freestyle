@@ -40,7 +40,7 @@ hr{
 
 .container{
     margin-top: 7vh;
-    width: 55%;
+    width: 50%;
     background: linear-gradient(to right, #051122, #020617);
     opacity: 80%;
     border-radius: 10px;
@@ -166,7 +166,7 @@ a:hover ~ #img-vbox {
     background: linear-gradient(to right, #010c1a, #020617);
     border-radius: 5px;
     padding: 10px;
-    width: 100%;
+    width: 70%;
     margin-top: 3vh;
 }
 
@@ -215,6 +215,7 @@ a:hover ~ #img-vbox {
 
 #imglinux{
     display: none;
+    height: 10px;
 }
 
 /* Tema linux */
@@ -252,4 +253,32 @@ body.linux header{
 body.linux #imglinux{
     display: block;
     height: 10vh;
+}
+
+#sidebar{
+    display: inline-flexbox;
+    width: 15vw;
+    margin-top: 40px;
+    transition: opacity 0.4s, transform 1s;
+}
+
+#sidebar nav a{
+    display: block;
+    color: #00af00;
+    text-decoration: none;
+}
+
+#sidebar h2{
+    margin: 10px;
+}
+
+#sidebar hr{
+    margin: 10px;
+}
+
+#sidebar.escondido { !important
+    display: none;
+     opacity: 0;
+    transform: translateX(-100%);
+    pointer-events: none;
 }

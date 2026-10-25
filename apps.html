@@ -11,24 +11,64 @@
 <body>
     <header>
     <nav>
-         <h1 id="titulo_site">Freestyle <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExa3hoYTc1c2l4ZGU4ZnRvOXhxY2xraXE2MzRiOTA3NjI1ZWg4ZmVpdCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/ihH80CKEmNG0Ady5wj/giphy.gif" class="img-container" style="height: 5vh; width: 5vh; margin-top: -10px"></h1>
+         <h1 id="titulo_site"> <img src="https://cdn-icons-png.flaticon.com/512/8532/8532476.png" style="height: 4vh;" id="menuburger" onclick="escondermenu()"> Freestyle <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExa3hoYTc1c2l4ZGU4ZnRvOXhxY2xraXE2MzRiOTA3NjI1ZWg4ZmVpdCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/ihH80CKEmNG0Ady5wj/giphy.gif" class="img-container" style="height: 5vh; width: 5vh; margin-top: -10px"></h1>
         <ul class="menu">
             <a href="index.html">
             <img src="fotos/home.png" alt="home" class="icones">
             </a>
-            <a href="links.html">
-            <img src="fotos/link.png" alt="link" class="icones">
-            </a>
-            <a href="contador.html">
-            <img src="fotos/calendario.png" alt="calendário" class="icones">    
-            </a>
             </ul>
     </nav>
     </header>
+
+    <aside id="sidebar">
+        <nav>
+            <h2>Links</h2>
+            <ul>
+            <a href="links.html">Meus Links</a>
+            <a href="dwl">Onion Links</a>
+            <a href="/">Alive forum</a>
+            <a href="/">Eletronic archives</a>
+            </ul>
+            <hr>
+
+            <h2>Prog. Files</h2>
+            <ul>
+            <a href="os.html">Sistemas</a>
+            <a href="apps.html">Apps</a>
+            </ul>
+
+            <hr>
+
+            <h2>Pessoais</h2>
+            <ul>
+            <a href="diarios.html">Meus diários</a>
+            <a href="contador.html">Calendário</a>
+            </ul>
+            <hr>
+            <h2>Materiais</h2>
+            <ul>
+                <a href="/">Drive</a>
+            </ul>
+            <hr>
+            <h2>Jogos</h2>
+            <ul>
+                <a href="/">Xbox360 games</a>
+                <a href="/">PS2 OPL</a>
+            </ul>
+            <hr>
+            <ul>
+                <button onclick="trocartema()" class="btn btn-primary" id="btnlinux"> Apertae <img src="https://cdn.pixabay.com/photo/2016/07/20/21/03/tux-1531289_640.png" class="img-container"> </button>
+            </ul>            
+        </nav>
+
+    </aside>
+    <div style="margin-top: -680px;">
     <div class="container" style="background: none; text-align: center;">
         <h1>Em desenvolvimento</h1>
         <h2>Em breve disponível</h2>
         <img src="fotos/menatwork.png" class="img-develop">
+    </div>
+    <script src="script.js"></script>
     </div>
 </body>
 </html>

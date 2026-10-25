@@ -55,3 +55,8 @@ function trocartema(){
     }
 }
 
+function escondermenu(){
+    document.getElementById("sidebar").classList.toggle("escondido");
+    document.getElementById("sidebar").style.transition = "1s";
+    document.getElementById("grupo").classList.toggle("sideativa");
+}
