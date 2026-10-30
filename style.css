@@ -258,14 +258,15 @@ body.linux #imglinux{
 #sidebar{
     display: inline-flexbox;
     width: 15vw;
-    margin-top: 40px;
     transition: opacity 0.4s, transform 1s;
+    position: fixed;
 }
 
 #sidebar nav a{
     display: block;
     color: #00af00;
     text-decoration: none;
+    position: relative;
 }
 
 #sidebar h2{
@@ -281,4 +282,8 @@ body.linux #imglinux{
      opacity: 0;
     transform: translateX(-100%);
     pointer-events: none;
+}
+
+@media (max-width: 960px){
+    
 }
