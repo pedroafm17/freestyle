@@ -277,13 +277,22 @@ body.linux #imglinux{
     margin: 10px;
 }
 
-#sidebar.escondido { !important
+#sidebar.escondido {
     display: none;
      opacity: 0;
     transform: translateX(-100%);
     pointer-events: none;
+        transition: opacity 0.4s, transform 1s;
+}
+
+#all.escondido{
+    margin-top: -630px;
 }
 
 @media (max-width: 960px){
-    
+   #sidebar{
+    display: inline;
+    position: sticky;
+}
+
 }

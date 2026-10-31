@@ -58,5 +58,9 @@ function trocartema(){
 function escondermenu(){
     document.getElementById("sidebar").classList.toggle("escondido");
     document.getElementById("sidebar").style.transition = "1s";
-    document.getElementById("grupo").classList.toggle("sideativa");
+    if (window.matchMedia("(max-width: 960px)").matches) {
+    const divgeral = document.getElementById("all")
+    divgeral.style.marginBottom= "-670px";
 }
+}
+
